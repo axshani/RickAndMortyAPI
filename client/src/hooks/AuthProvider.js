@@ -16,7 +16,7 @@ const AuthProvider = ({ children }) => {
       navigate("/dashboard");
       return;
     }
-    throw new Error("Wrong username or password");
+    alert("Wrong username or password");
   };
 
   const logOut = () => {

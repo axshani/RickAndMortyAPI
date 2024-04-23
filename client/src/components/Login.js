@@ -12,12 +12,8 @@ const Login = () => {
   const handleSubmitEvent = (e) => {
     e.preventDefault();
     if (input.username !== "" && input.password !== "") {
-      try {
-        auth.loginAction(input);
-        return;
-      } catch (error) {
-        alert(error.message)
-      }
+      auth.loginAction(input);
+      return;
     }
     alert("please provide a valid input");
   };
