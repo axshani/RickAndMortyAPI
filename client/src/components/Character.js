@@ -10,7 +10,11 @@ function Character(props) {
                     <br></br>
                     <label>Gender: {props.character.gender}</label>
                     <br></br>
+                    <label>Status: {props.character.status}</label>
+                    <br></br>
                     <label>Id: {props.character.id}</label>
+                    <br></br>
+                    <label>URL: {props.character.url}</label>
                 </div>}
         </>
     )
