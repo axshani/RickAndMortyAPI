@@ -6,6 +6,7 @@ Fetch and display RickAndMortyAPI
 run with
 ```
 cd client
+npm i
 npm start
 ```
 
