@@ -16,15 +16,13 @@ function Dashboard() {
 
     return (
         <div>
-            <div className="search">
-                <input type="text"
-                    placeholder={"Search by name"}
-                    className={"input"}
-                    onChange={event => setQuery(event.target.value)}
-                    value={query}
-                />
-            </div>
-            <Character character={data} />
+            <input type="text"
+                placeholder={"Search by name"}
+                className="search"
+                onChange={event => setQuery(event.target.value)}
+                value={query}
+            />
+            {data && <Character character={data} />}
         </div>
     );
 }

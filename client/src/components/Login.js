@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmitEvent}>
-      <div className="form_control">
+      <div className="login">
         <label htmlFor="user-name">Username:</label>
         <input
           type="text"
@@ -37,8 +37,6 @@ const Login = () => {
           aria-invalid="false"
           onChange={handleInput}
         />
-      </div>
-      <div className="form_control">
         <label htmlFor="password">Password:</label>
         <input
           type="password"
@@ -48,8 +46,9 @@ const Login = () => {
           aria-invalid="false"
           onChange={handleInput}
         />
+        <br></br>
+        <input type="submit" name="log" id="log" value="Login"/>
       </div>
-      <button className="btn-submit">Submit</button>
     </form>
   );
 };

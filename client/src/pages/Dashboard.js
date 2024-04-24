@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'; import Table from '../components/Table';
+import React, { useState, useEffect } from 'react';
+import Table from '../components/Table';
 import { useQuery } from 'react-query';
 import { getCharactersFromAPI } from '../services/api';
 import { useDebounce } from '../hooks/useDebounce';
@@ -27,7 +28,7 @@ function Dashboard() {
             <div className="search">
                 <input type="text"
                     placeholder={"Search Character"}
-                    className={"input"}
+                    className="search"
                     onChange={event => setQuery(event.target.value)}
                     value={query}
                 />
